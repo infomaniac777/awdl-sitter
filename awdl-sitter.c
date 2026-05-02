@@ -29,12 +29,12 @@ static void sc_callback(SCDynamicStoreRef store, CFArrayRef changedKeys, void *i
 }
 
 int main(void) {
-    openlog("awdl-killer", LOG_PID, LOG_DAEMON);
+    openlog("awdl-sitter", LOG_PID, LOG_DAEMON);
 
     bring_awdl_down();
 
     SCDynamicStoreContext ctx = { 0, NULL, NULL, NULL, NULL };
-    SCDynamicStoreRef store = SCDynamicStoreCreate(NULL, CFSTR("awdl-killer"), sc_callback, &ctx);
+    SCDynamicStoreRef store = SCDynamicStoreCreate(NULL, CFSTR("awdl-sitter"), sc_callback, &ctx);
     if (!store) {
         syslog(LOG_ERR, "failed to create SCDynamicStore");
         return 1;

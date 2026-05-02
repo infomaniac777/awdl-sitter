@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.local.awdl-killer</string>
+    <string>com.local.awdl-sitter</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/local/bin/awdl-killer</string>
+        <string>/usr/local/bin/awdl-sitter</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
     <key>KeepAlive</key>
     <true/>
     <key>StandardErrorPath</key>
-    <string>/var/log/awdl-killer.log</string>
+    <string>/var/log/awdl-sitter.log</string>
 </dict>
 </plist>
